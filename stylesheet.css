@@ -1,3 +1,7 @@
+.main{
+    margin: 0 auto
+}
+
 .nav-bar li {
   float: none;
   display: inline-block;
