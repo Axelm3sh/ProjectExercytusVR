@@ -1,23 +1,28 @@
+.main{
+    margin: 0 auto
+}
+
 .nav-bar li {
-  float: left;
+  float: none;
+  display: inline-block;
 }
 
 .nav-bar li a{
-  display: block;
+  display: inline-block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 28px 50px;
   text-decoration: none;
+  font-size: 36px;
 }
 
 .nav-bar li a:hover {
-  background-color: #1A237E; 
+  background-color: #1A237E;
 }
 
 .nav-bar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  float:none;
+  text-align: center;
   overflow: hidden;
   background-color: #333;
 }
