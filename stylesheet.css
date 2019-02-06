@@ -26,3 +26,22 @@
   overflow: hidden;
   background-color: #333;
 }
+
+.main-content {
+  float: left;
+}
+
+.content-card {
+  background-color: #1A237E; 
+  padding: 80px;
+  margin: 20px 440px;
+  display: table
+}
+
+.content-card p{
+    color: white; 
+}
+
+.content-card h2{
+    color: white; 
+}
