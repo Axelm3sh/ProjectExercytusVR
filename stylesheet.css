@@ -9,11 +9,13 @@
 
 .nav-bar li a{
   display: flex;
+    align-content: center;
+    justify-content: center;
   color: white;
   text-align: center;
-/*  padding: 28px 50px;*/
+  padding: 28px 20px;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 1.75em;
 }
 
 .nav-bar li a:hover {
@@ -23,7 +25,7 @@
 .nav-bar ul {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-around;
     
   background-color: #333;
@@ -36,21 +38,31 @@
     flex-direction: column;
 }
 
+/*Base Item containers*/
 .content-card {
   background-color: #1A237E; 
     
   padding: 20px;
 /*  margin: 20px 440px;*/
-    
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/*content images, typically original size and centered*/
+.content-card img{
+    overflow: hidden;
+    margin: auto;
+    padding:inherit;
 }
 
 .content-card p{
+    text-align: left;
     color: white; 
 }
 
 .content-card h2{
+    margin: auto;
     color: white; 
 }
