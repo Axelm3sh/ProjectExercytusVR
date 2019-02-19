@@ -8,12 +8,12 @@
 }
 
 .nav-bar li a{
-  display: inline-block;
+  display: flex;
   color: white;
   text-align: center;
-  padding: 28px 50px;
+/*  padding: 28px 50px;*/
   text-decoration: none;
-  font-size: 36px;
+  font-size: 1.5em;
 }
 
 .nav-bar li a:hover {
@@ -21,21 +21,30 @@
 }
 
 .nav-bar ul {
-  float:none;
-  text-align: center;
-  overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    
   background-color: #333;
 }
 
+/*Used to sort internal items, flex with columns*/
 .main-content {
-  float: left;
+  
+    display: flex;
+    flex-direction: column;
 }
 
 .content-card {
   background-color: #1A237E; 
-  padding: 80px;
-  margin: 20px 440px;
-  display: table
+    
+  padding: 20px;
+/*  margin: 20px 440px;*/
+    
+
+    display: flex;
+    flex-direction: row;
 }
 
 .content-card p{
