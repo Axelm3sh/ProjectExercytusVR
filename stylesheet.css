@@ -1,5 +1,19 @@
+body {
+    background-color: #2A2B2E;
+/*    background-color: #89350F;*/
+    font-family: 'Orbitron', sans-serif;
+}
+
 .main{
     margin: 0 auto
+}
+
+/*Navigation bar styles*/
+.nav-bar {
+    position: sticky;
+    top: 0px;
+    max-height: 20%;
+    z-index: 100; /*Higher Z*/
 }
 
 .nav-bar li {
@@ -8,40 +22,83 @@
 }
 
 .nav-bar li a{
-  display: inline-block;
+  display: flex;
+    align-content: center;
+    justify-content: center;
   color: white;
   text-align: center;
-  padding: 28px 50px;
+  padding: 28px 20px;
   text-decoration: none;
-  font-size: 36px;
+  font-size: 1.35em;
 }
 
 .nav-bar li a:hover {
-  background-color: #1A237E;
+  background-color: #8F94AD;
 }
 
 .nav-bar ul {
-  float:none;
-  text-align: center;
-  overflow: hidden;
-  background-color: #333;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+/*  background-color: #333;*/
+/*  background-color: #838482;*/
+    background-color: #4E5C5C;
 }
 
+/*Used to sort internal items, flex with columns*/
 .main-content {
-  float: left;
+  
+    display: flex;
+    flex-direction: column;
 }
 
+/*Base Item containers*/
 .content-card {
-  background-color: #1A237E; 
-  padding: 80px;
-  margin: 20px 440px;
-  display: table
+/*  background-color: #1A237E; */
+  background-color: #1F2B2E; 
+    
+  padding: 20px;
+/*  margin: 20px 440px;*/
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    align-content: center;
 }
 
-.content-card p{
+/*content images, typically original size and centered*/
+.content-card img{
+    overflow: hidden;
+    margin: auto;
+    padding:inherit;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.content-card p{    
+    margin: 2% 5%;
+    text-align: left;
     color: white; 
+    font-size: 1.175em;
 }
 
 .content-card h2{
+    margin: auto;
     color: white; 
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2em;
+}
+
+.content-card article {
+    font-family: 'Quantico', sans-serif;
+}
+
+.content-card header {
+    display: flex;
+    flex-flow: column;
+    align-content: center;
 }
