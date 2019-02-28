@@ -23,6 +23,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     border-radius: 5px;
+    padding-left: 0px;
     
 /*  background-color: #333;*/
 /*  background-color: #838482;*/
@@ -105,3 +106,9 @@ body {
     font-size: 1.175em;
 }
 
+@media screen and (max-width:700px){
+    .nav-bar ul{
+        font-size:0.8em;
+/*        background-color: red;*/
+    }
+}
