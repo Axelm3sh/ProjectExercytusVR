@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron:500,900|Quantico');
+
 body {
     background-color: #2A2B2E;
-/*    background-color: #89350F;*/
+    /*    background-color: #89350F;*/
     font-family: 'Orbitron', sans-serif;
+    color: white;
 }
 
-.main{
+.main {
     margin: 0 auto
 }
 
@@ -13,7 +16,8 @@ body {
     position: sticky;
     top: 0px;
     max-height: 10%;
-    z-index: 100; /*Higher Z*/
+    z-index: 100;
+    /*Higher Z*/
     margin: 15px;
 }
 
@@ -24,51 +28,58 @@ body {
     justify-content: space-around;
     border-radius: 5px;
     padding-left: 0px;
-    
-/*  background-color: #333;*/
-/*  background-color: #838482;*/
+
+    /*  background-color: #333;*/
+    /*  background-color: #838482;*/
     background-color: #4E5C5C;
+
 }
 
 .nav-bar li {
-  float: none;
-  display: inline-block;
+    float: none;
+    display: inline-block;
 }
 
-.nav-bar li a{
-  display: flex;
+.nav-bar li a {
+    display: flex;
     align-content: center;
     justify-content: center;
-  color: white;
-  text-align: center;
-  padding: 28px 20px;
-  text-decoration: none;
-  font-size: 1.35em;
+    color: white;
+    text-align: center;
+    padding: 28px 20px;
+    text-decoration: none;
+    font-size: 1.35em;
+
+    /*    transistion*/
+    -webkit-transition: background-color 0.2s ease-in;
+    -moz-transition: background-color 0.2s ease-in;
+    -o-transition: background-color 0.2s ease-in;
+    transition: background-color 0.2s ease-in;
 }
 
 .nav-bar li a:hover {
-  background-color: #8F94AD;
+    background-color: #8F94AD;
 }
 
 /*Used to sort internal items, flex with columns*/
 .main-content {
-  
+
     display: flex;
     flex-direction: column;
 }
 
 /*Base Item containers*/
 .content-card {
-/*  background-color: #1A237E; */
-  background-color: #1F2B2E; 
-    
-  padding: 20px;
-/*  margin: 20px 440px;*/
+    /*  background-color: #1A237E; */
+    background-color: #1F2B2E;
+
+    padding: 20px;
+    /*  margin: 20px 440px;*/
 
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    
+
     justify-content: center;
     align-content: center;
 }
@@ -83,32 +94,40 @@ body {
     font-family: 'Quantico', sans-serif;
 }
 
-.content-card h2{
+.content-card h2 {
     margin: auto;
-    color: white; 
+    color: white;
     font-family: 'Orbitron', sans-serif;
     font-size: 2em;
 }
 
 /*content images, typically original size and centered*/
-.content-card img{
+.content-card img {
     overflow: hidden;
     margin: auto;
-    padding:inherit;
+    padding: inherit;
     max-height: 100%;
     max-width: 100%;
 }
 
-.content-card p{    
+.content-card p {
     margin: 2% 5%;
     text-align: left;
-    color: white; 
+    color: white;
     font-size: 1.175em;
 }
 
-@media screen and (max-width:700px){
-    .nav-bar ul{
-        font-size:0.8em;
-/*        background-color: red;*/
+.content-card #Content1 {
+	margin-top: 30px;
+}
+
+#TeamMembersArticle img {
+	margin-right: 25px;
+}
+
+@media screen and (max-width:700px) {
+    .nav-bar ul {
+        font-size: 0.8em;
+        /*        background-color: red;*/
     }
 }
