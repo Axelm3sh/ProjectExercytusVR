@@ -11,4 +11,8 @@ window.onload = function()
     }
     
     indexPageContent.innerHTML = "<p>Website is under development! Please check back later!</p>";
+
+    
+    //$("#Content1").load("TeamMember.html");
 };
+
