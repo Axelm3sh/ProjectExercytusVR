@@ -16,9 +16,8 @@ $(document.body).on("click", "*", function (elem) {
 });
 
 //document.onload = function()
-window.onload = function()
-{
-    
+window.onload = function () {
+
     $pageTitle.text("Website is under development!");
     $pageContent.html("<p>Please check back later!</p>");
 
@@ -29,16 +28,42 @@ clickActions["nav-home"] = function (e) {
     //window.location.href = "index.html";
     $pageTitle.text("Website is under development!");
     $pageContent.html("<p>Please check back later!</p>");
-    
-}
+    toggleBannerImg(1);
+
+};
 
 clickActions["nav-team"] = function (e) {
-    
-    $("#Content1").load("pages/TeamMember.html", replaceTitle("Team Members"));
-    
+
+    $pageContent.load("pages/TeamMember.html", replaceTitle("Team Members"));
+    toggleBannerImg(1);
+
+};
+
+clickActions["nav-media"] = function (e) {
+    $pageContent.load("pages/Media.html", function () {
+        replaceTitle("Media");
+        toggleBannerImg();
+    });
+
+};
+
+clickActions["nav-contact"] = function (e) {
+
+    $pageContent.load("pages/Contact.html", replaceTitle("Contact Us"));
+    toggleBannerImg();
+
+};
+
+function replaceTitle(newTitle) {
+    $pageTitle.text(newTitle);
 }
 
-function replaceTitle(newTitle)
-{
-    $pageTitle.text(newTitle);
+function toggleBannerImg(show) {
+    if (show !== null) {
+        if (show == true) {
+            $titleBanner.slideDown("fast");
+        } else {
+            $titleBanner.slideUp("fast");
+        }
+    }
 }

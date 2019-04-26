@@ -33,6 +33,11 @@ body {
     /*  background-color: #838482;*/
     background-color: #4E5C5C;
 
+    /*    text-shadow: 3px 3px 2px rgba(20, 83, 132, 1);*/
+    /*    text-shadow: 4px 4px 6px rgb(73, 87, 99, 1);*/
+/*        text-shadow: -2px -2px 5px rgba(20, 83, 132, 1);*/
+
+
 }
 
 .nav-bar li {
@@ -55,10 +60,17 @@ body {
     -moz-transition: background-color 0.2s ease-in;
     -o-transition: background-color 0.2s ease-in;
     transition: background-color 0.2s ease-in;
+
+    -webkit-transition: text-shadow 0.3s ease-out;
+    -moz-transition: text-shadow 0.3s ease-out;
+    -o-transition: text-shadow 0.3s ease-out;
+    transition: text-shadow 0.3s ease-out;
 }
 
 .nav-bar li a:hover {
     background-color: #8F94AD;
+    /*    text-shadow: 4px 4px 6px rgb(73, 87, 99, .85);*/
+    text-shadow: 3px 3px 2px rgba(20, 83, 132, 1);
 }
 
 /*Used to sort internal items, flex with columns*/
@@ -118,16 +130,28 @@ body {
 }
 
 .content-card #Content1 {
-	margin-top: 30px;
+    margin-top: 30px;
+}
+
+.content-inner {
+    background-color: rgba(153, 179, 230, 0.25);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.media-container {
+    width: 90vw;
+    height: auto;
 }
 
 #TeamMembersArticle img {
-	margin-right: 25px;
+    margin-right: 25px;
 }
 
 @media screen and (max-width:700px) {
     .nav-bar ul {
         font-size: 0.8em;
+        padding: 8px 2px;
         /*        background-color: red;*/
     }
 }
